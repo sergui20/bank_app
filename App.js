@@ -2,7 +2,9 @@ import {createAppContainer, createStackNavigator, createDrawerNavigator} from 'r
 
 import LoginScreen from './src/components/login-screen';
 import SignupScreen from './src/components/signup-screen';
-import AccountScreen from './src/components/accounts-screen';
+import SavingsAccount from './src/components/savings-screen';
+import CheckingAccount from './src/components/checking-screen';
+import Logout from './src/components/Logout'
 
 const authFlow = createStackNavigator(
   {
@@ -10,18 +12,18 @@ const authFlow = createStackNavigator(
     Signup: SignupScreen
   },
   {
-    initialRouteName: 'Home'
+    initialRouteName: 'Home',
+    navigationOptions: {
+      header: null
+    }
   }
 )
 
 const mainFlow = createDrawerNavigator(
   {
-    Main: AccountScreen
-  },
-  {
-    initialRouteName: 'Main',
-    drawerWidth: 300,
-    drawerPosition: 'left'
+    Savings: SavingsAccount,
+    Checking: CheckingAccount,
+    Logout: Logout
   }
 )
 

@@ -5,7 +5,7 @@ const { width } = Dimensions.get('window');
 
 function Card(props) {
     return (
-        <View style={styles.cardStyle}>
+        <View style={[styles.cardStyle, props.styles]}>
             {props.children}
         </View>
     )

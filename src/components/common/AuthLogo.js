@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 
-function HeaderLogo() {
+function AuthLogo() {
     return (
         <View style={styles.headerStyle}>
             <Image source={require('../../images/logo.png')} />
@@ -15,4 +15,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default HeaderLogo;
+export default AuthLogo;

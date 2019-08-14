@@ -5,7 +5,7 @@ import Container from './common/container';
 import Card from './common/card';
 import CardSection from './common/card-section';
 import Button from './common/button';
-import Header from './common/header';
+import AuthLogo from './common/AuthLogo';
 
 class LoginScreen extends Component {
     static navigationOptions  = {
@@ -15,7 +15,7 @@ class LoginScreen extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Header />
+                <AuthLogo />
 
                 <Container>
                     <Card>
